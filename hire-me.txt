@@ -1,0 +1,7 @@
+Need help setting this up, customizing, or deploying your own AWS app?
+
+I offer professional AWS setup, serverless deployment, and DevOps services.
+
+💼 Available on Fiverr: https://www.fiverr.com/s/R7W6DWR
+📧 Fast, friendly communication
+📁 Can also help with Terraform, GitHub Actions, CI/CD, debugging, and app migration

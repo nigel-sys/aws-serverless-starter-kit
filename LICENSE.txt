@@ -1,0 +1,14 @@
+Copyright © 2025 Pratyush
+
+This Serverless AWS Starter Kit is licensed for **Personal Use Only**.
+
+You may:
+- Use it in your own projects
+- Modify it for learning or personal deployment
+
+You may NOT:
+- Resell, redistribute, or repackage this code or product
+- Share it publicly without written permission
+- Use it as a base for commercial templates
+
+For commercial use, contact: pratyushbaxla@gmail.com, https://www.fiverr.com/s/8zEBDBv
