@@ -40,4 +40,4 @@ jobs:
 
       - name: Sync frontend to S3
         run: |
-          aws s3 sync frontend/static-site/ s3://serverless-starter-frontend-bucket/ --delete
+          aws s3 sync frontend/static-site/ s3://serverless-starter-frontend/ --delete
