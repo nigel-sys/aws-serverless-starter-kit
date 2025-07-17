@@ -5,7 +5,6 @@
     <script src="config.js"></script>
     <script>
       const config = window.APP_CONFIG;
-
       window.location.href = `${config.cognitoDomain}/login?client_id=${config.clientId}&response_type=token&scope=email+openid+profile&redirect_uri=${config.redirectUri}`;
     </script>
   </head>
