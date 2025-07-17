@@ -227,6 +227,3 @@ node_modules/
 
 # VS Code settings
 .vscode/
-
-# Ignore frontend config values
-/frontend/static-site/config.js

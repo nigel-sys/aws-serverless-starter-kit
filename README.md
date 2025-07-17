@@ -78,7 +78,7 @@ terraform apply
 
 ### 4. Update Frontend Configuration
 
-All configuration values (like CloudFront domain and Cognito settings) are centralized in `config.js`. Rename the `config.example.js` to `config.js`
+All configuration values (like CloudFront domain and Cognito settings) are centralized in `config.js`.
 
 #### Steps:
 
