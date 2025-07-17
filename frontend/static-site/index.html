@@ -2,18 +2,16 @@
 <html>
   <head>
     <title>Serverless App</title>
-  </head>
-  <script>
-    const clientId = '55403cj4qov65aesp1ri848jeq';
-    const redirectUri = 'https://d2h6dh0ek3z5t8.cloudfront.net/callback.html'; // Use your CloudFront domain
-    const domain =
-      'https://serverless-starter-auth-domain-577d5819.auth.us-east-1.amazoncognito.com';
+    <script src="config.js"></script>
+    <script>
+      const config = window.APP_CONFIG;
 
-    const token = localStorage.getItem('id_token');
-    if (!token) {
-      window.location.href = `${domain}/login?client_id=${clientId}&response_type=token&scope=email+openid+profile&redirect_uri=${redirectUri}`;
-    }
-  </script>
+      const token = localStorage.getItem('id_token');
+      if (!token) {
+        window.location.href = `${config.cognitoDomain}/login?client_id=${config.clientId}&response_type=token&scope=email+openid+profile&redirect_uri=${config.redirectUri}`;
+      }
+    </script>
+  </head>
   <body>
     <h1>Welcome to the Serverless App</h1>
     <div id="user"></div>

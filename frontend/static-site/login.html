@@ -1,8 +1,15 @@
-<script>
-  const clientId = '55403cj4qov65aesp1ri848jeq';
-  const redirectUri = 'https://d2h6dh0ek3z5t8.cloudfront.net/callback.html';
-  const domain =
-    'https://serverless-starter-auth-domain-577d5819.auth.us-east-1.amazoncognito.com';
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Redirect</title>
+    <script src="config.js"></script>
+    <script>
+      const config = window.APP_CONFIG;
 
-  window.location.href = `${domain}/login?client_id=${clientId}&response_type=token&scope=email+openid+profile&redirect_uri=${redirectUri}`;
-</script>
+      window.location.href = `${config.cognitoDomain}/login?client_id=${config.clientId}&response_type=token&scope=email+openid+profile&redirect_uri=${config.redirectUri}`;
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to login...</p>
+  </body>
+</html>

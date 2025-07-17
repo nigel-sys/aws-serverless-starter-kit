@@ -76,15 +76,25 @@ terraform apply
 - This will provision all AWS resources.
 - After apply, note the outputs for `frontend_url` (CloudFront domain), `client_id`, and `hosted_ui_url`.
 
-### 4. Update frontend URLs
+### 4. Update Frontend Configuration
 
-Edit these files in `frontend/static-site/`:
+All configuration values (like CloudFront domain and Cognito settings) are centralized in `config.js`. Rename the `config.example.js` to `config.js`
 
-- `index.html`
-- `login.html`
-- `script.js`
+#### Steps:
 
-Replace any placeholder or old URLs with your actual CloudFront domain and Cognito values from Terraform outputs.
+1. Open the file:  
+   `frontend/static-site/config.js`
+
+2. Replace the placeholders with your actual values from the Terraform outputs:
+
+   ```js
+   window.APP_CONFIG = {
+     clientId: 'your-cognito-client-id',
+     redirectUri: 'https://your-cloudfront-domain/callback.html',
+     cognitoDomain: 'https://your-cognito-domain.auth.region.amazoncognito.com',
+     apiUrl: 'https://your-api-gateway-url/prod/hello',
+   };
+   ```
 
 ### 5. Upload frontend to S3
 
@@ -136,25 +146,6 @@ Need:
 
 Hire me on Fiverr:  
 👉 [https://www.fiverr.com/s/Ke9VjvE](https://www.fiverr.com/s/Ke9VjvE)
-
----
-
-## Project Structure
-
-```
-backend/
-  lambda/
-    handler.py
-    requirements.txt
-  terraform/
-    *.tf
-frontend/
-  static-site/
-    index.html
-    login.html
-    callback.html
-    script.js
-```
 
 ---
 
