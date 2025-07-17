@@ -4,7 +4,8 @@
     <title>Login Redirect</title>
     <script src="config.js"></script>
     <script>
-      window.location.href = `${config.cognitoDomain}/login?client_id=${config.clientId}&response_type=token&scope=email+openid+profile&redirect_uri=${config.redirectUri}`;
+      const cfg = window.APP_CONFIG;
+      window.location.href = `${cfg.cognitoDomain}/login?client_id=${cfg.clientId}&response_type=token&scope=email+openid+profile&redirect_uri=${cfg.redirectUri}`;
     </script>
   </head>
   <body>
