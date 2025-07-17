@@ -149,6 +149,10 @@ Hire me on Fiverr:
 
 ---
 
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-support-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/nigieuno)
+
+---
+
 ## License
 
 This project is licensed for Personal Use Only.  
