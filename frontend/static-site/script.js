@@ -22,6 +22,8 @@ function callApi() {
     });
 }
 
+window.callApi = callApi;
+
 function logout() {
   localStorage.removeItem('id_token');
   window.location.href = `${config.cognitoDomain}/logout?client_id=${config.clientId}&logout_uri=${config.logoutUrl}`;
